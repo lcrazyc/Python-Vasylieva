@@ -1,0 +1,31 @@
+import math
+
+def function (a):  #Функція, що знаходить число
+  
+  z = math.cos(a) + math.cos(2 * a) + math.cos(6 * a) + math.cos(7 * a)
+  
+  return z
+
+def у(n):
+  
+    y = 1
+  
+    for i in range(1, 2 * n, 2):
+      
+        y *= i
+      
+    return y
+  
+a = int(input("Введіть число а :"))
+
+print ("Значення виразу z =", function(a))
+
+n = int(input("Введіть натуральне число n: "))
+
+while n < 1:
+  
+   n = int(input("n повинно бути натуральним числом. "))
+
+result = у(n)
+
+print(f"Результат обчислення у = 1*3*5*...(2*{n}-1) = {result}")
