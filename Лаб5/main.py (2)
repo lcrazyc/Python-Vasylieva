@@ -1,0 +1,18 @@
+# Функція для заповнення масиву за шаблоном
+def f_array(n):
+    array = []
+    for i in range(n, 0, -1):
+        row = list(range(i, 0, -1))
+        while len(row) < n:
+            row.append(0)
+        array.append(row)
+    return array
+
+# Функція для виведення масиву на екран
+def print_array(array):
+    for row in array:
+        print(" ".join(map(str, row)))
+
+n = 7  # Задайте бажану кількість рядків (7 в даному випадку)
+result_array = f_array(n)
+print_array(result_array)
