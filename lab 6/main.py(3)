@@ -1,1 +1,11 @@
+# Задання множини символів від 'a' до 'z'
+characters = set("OPQabhijABCDEFGHklmnopqrVWXstuvwxyzIJKLMNRSTcdefgUYZ")
+
+# Сортування множини та перетворення її в список
+sorted_characters = sorted(characters)
+
+# Виведення відсортованого списку на екран
+print("Елементи в алфавітному порядку:")
+for char in sorted_characters:
+    print(char, end=' ')
 
