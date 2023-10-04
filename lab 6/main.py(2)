@@ -1,1 +1,13 @@
+def search_element():
+
+    A = list(map(int,input('Введіть список елементів: ').split()))
+
+    print(A)
+
+    element = int(input("Введіть елемент для пошуку: "))
+    if element in A:         
+      print("Елемент '{element}' знайдено в списку ")
+    else:
+      print("У списку немає такого елемента")
+search_element()
 
