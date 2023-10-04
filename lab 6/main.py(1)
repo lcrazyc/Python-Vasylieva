@@ -1,1 +1,16 @@
 
+def add_element():
+
+    A = list(map(int,input('Введіть список елементів: ').split()))
+
+    print(A)
+
+    element = int(input("Введіть елемент, перед яким додамо новий: "))
+    if element in A:         
+      add_element = int(input("Введіть елемент для вставки: "))
+      index = A.index(element) 
+      A.insert(index, add_element)
+      print(A)
+    else:
+      print("У списку немає такого елемента")
+add_element()
